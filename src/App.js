@@ -22,7 +22,7 @@ export default function App() {
         <h1>Winner is : {winner}</h1>
         <div style={{width:'300px', height:'300px'}}>
             <div style={{ height:'100%', width:'100%', display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'4px'}}>
-            { gridArray.map((val, index)=><button key={index} onClick={()=>handleOnClick(index)}>{val}</button>)}
+            { gridArray.map((val, index)=><button style={{backgroundColor:'lightblue', color:'white', fontWeight:'bold',fontSize:'1rem'}} key={index} onClick={()=>handleOnClick(index)}>{val}</button>)}
             </div>
         </div>
            
